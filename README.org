@@ -1,5 +1,29 @@
 
 
+* images
+  #+CAPTION: relay_switch_3d_1
+  #+NAME:   fig:0
+  #+attr_html: :width 800px
+  [[./images/relay_switch_3d_1.png]]
+
+  #+CAPTION: relay_switch_3d_2
+  #+NAME:   fig:1
+  #+attr_html: :width 800px
+  [[./images/relay_switch_3d_2.png]]
+
+  #+CAPTION: relay_switch_3d_3
+  #+NAME:   fig:2
+  #+attr_html: :width 800px
+  [[./images/relay_switch_3d_3.png]]
+
+  #+CAPTION: relay_switch
+  #+NAME:   fig:3
+  #+attr_html: :width 800px
+  [[./images/relay_switch.png]]
+
+
+
+
 * description
   similar project
   http://www.diyaudio.com/forums/analog-line-level/254244-building-complete-preamp-arduino-remote-volume-input-control.html#post3882944
