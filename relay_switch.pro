@@ -1,4 +1,4 @@
-update=Fri 01 Jan 2016 01:37:45 PM EST
+update=Sun 03 Jan 2016 02:58:40 PM EST
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,13 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=/home/jjrh/CODE/kicad/libraries/zips/w_relay
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=images/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

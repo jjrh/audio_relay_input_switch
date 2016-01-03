@@ -28,8 +28,11 @@
 
 
 #+START_IMAGES:
+
+
 * images
-	#+CAPTION:
+
+  	#+CAPTION:
 	#+NAME:relay_switch.sch.png
 	#+attr_html: :width 800px
 	[[./images/relay_switch.sch.png]]
@@ -58,7 +61,6 @@
 	#+NAME:relay_switch_3d_4.png
 	#+attr_html: :width 800px
 	[[./images/relay_switch_3d_4.png]]
-
 
 
 
