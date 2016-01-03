@@ -1,0 +1,85 @@
+#!/usr/bin/python
+
+
+"""
+ generate_readme - from https://github.com/jjrh/kicad_project_template
+
+ - finds all the images  images/ directory of the project
+ - converts any SVG images to PNG (github doesn't render svg) (uses 'convert' system utility )
+ - generates the image block of the readme file in orgmode syntax
+ - replaces text between "#+START_IMAGES:" and "#+END_IMAGES:" in README.org
+
+the neat thing with this is only the block between the tags is replaced,
+the rest of the document is unchanged.
+
+Github's html renderer ignores stuff starting with #+tagname: so it is
+untouched.
+
+"""
+
+
+import pystache
+from os import walk
+import subprocess
+
+renderer = pystache.Renderer()
+
+
+images = {}
+
+def chop_extension(f):
+    return ".".join(f.split(".")[0:-1])
+def convert_svg():
+    for (dirpath, dirnames, filenames) in walk("images"):
+        for f in filenames:
+            if f.split(".")[-1] == "svg":
+                command = "convert -density 1200 -resize 1200x1200 "+dirpath+"/"+f+" "+dirpath+"/"+chop_extension(f)+".png"
+                print "running:\n\t%s" % command
+                subprocess.Popen(command, shell=True , stdout=subprocess.PIPE).stdout.read()
+
+
+
+def generate_readme():
+    valid_image_formats = ["PNG","JPEG","JPG","GIF"]
+    for (dirpath, dirnames, filenames) in walk("images"):
+        good_files = []
+        for f in filenames:
+            if(f.split(".")[-1].upper() in valid_image_formats):
+                good_files.append(f)
+        images[dirpath] = good_files
+
+    README_TEXT=""
+    with open('README.org') as f:
+        found_start = False
+        for l in f.readlines():
+            if "#+START_IMAGES:" in l:
+                README_TEXT+="#+START_IMAGES:\n"
+                README_TEXT+="{{IMAGES}}\n"
+                found_start = True
+            if "#+END_IMAGES:" in l:
+                found_start = False
+            if not found_start:
+                README_TEXT+=l
+
+    # generate the image
+    IMG_TEXT=""
+    template ="\t#+CAPTION:{{caption}}\n\t#+NAME:{{name}}\n\t#+attr_html: :width 800px\n\t[[{{img_location}}]]"
+    for k,v in images.iteritems():
+        IMG_TEXT += "\n"
+        IMG_TEXT += "\n"
+        IMG_TEXT += "* %s\n" % k
+        IMG_TEXT += "\n"
+        for img in v:
+            IMG_TEXT+="%s\n" % renderer.render(template,{'name':img,'img_location':"./"+k+"/"+img})
+            IMG_TEXT+="\n"
+
+    README_TEXT = renderer.render(README_TEXT, {'IMAGES':IMG_TEXT})
+
+    # write the file
+    with open ('README.org', 'w') as f:
+        f.write(README_TEXT)
+
+
+if __name__ == "__main__":
+    convert_svg()
+    generate_readme()

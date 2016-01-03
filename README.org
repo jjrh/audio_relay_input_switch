@@ -1,28 +1,45 @@
 
 
+#+START_IMAGES:
 * images
-  #+CAPTION: relay_switch_3d_1
-  #+NAME:   fig:0
-  #+attr_html: :width 800px
-  [[./images/relay_switch_3d_1.png]]
 
-  #+CAPTION: relay_switch_3d_2
-  #+NAME:   fig:1
-  #+attr_html: :width 800px
-  [[./images/relay_switch_3d_2.png]]
+	#+CAPTION:
+	#+NAME:relay_switch_3d_3.png
+	#+attr_html: :width 800px
+	[[./images/relay_switch_3d_3.png]]
 
-  #+CAPTION: relay_switch_3d_3
-  #+NAME:   fig:2
-  #+attr_html: :width 800px
-  [[./images/relay_switch_3d_3.png]]
+	#+CAPTION:
+	#+NAME:relay_switch_3d_4.png
+	#+attr_html: :width 800px
+	[[./images/relay_switch_3d_4.png]]
 
-  #+CAPTION: relay_switch
-  #+NAME:   fig:3
-  #+attr_html: :width 800px
-  [[./images/relay_switch.png]]
+	#+CAPTION:
+	#+NAME:relay_switch-brd.png
+	#+attr_html: :width 800px
+	[[./images/relay_switch-brd.png]]
+
+	#+CAPTION:
+	#+NAME:relay_switch_3d_1.png
+	#+attr_html: :width 800px
+	[[./images/relay_switch_3d_1.png]]
+
+	#+CAPTION:
+	#+NAME:relay_switch_3d_2.png
+	#+attr_html: :width 800px
+	[[./images/relay_switch_3d_2.png]]
+
+	#+CAPTION:
+	#+NAME:relay_switch.sch.png
+	#+attr_html: :width 800px
+	[[./images/relay_switch.sch.png]]
+
+	#+CAPTION:
+	#+NAME:relay_switch.png
+	#+attr_html: :width 800px
+	[[./images/relay_switch.png]]
 
 
-
+#+END_IMAGES:
 
 * description
   similar project
