@@ -1,4 +1,4 @@
-update=Mon 10 Aug 2015 04:22:45 PM EDT
+update=Fri 01 Jan 2016 01:37:45 PM EST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../libraries/github/Relays_ThroughHole.pretty
+LibDir=/home/jjrh/CODE/kicad/MyLib/MyLib/kicad_git/Relays_ThroughHole.pretty
 [eeschema/libraries]
 LibName1=power
 LibName2=device

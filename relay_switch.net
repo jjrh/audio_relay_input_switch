@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/jjrh/CODE/kicad/audio_relay_input_switch/relay_switch.sch)
-    (date "Fri 01 Jan 2016 01:29:57 PM EST")
+    (date "Fri 01 Jan 2016 01:43:12 PM EST")
     (tool "Eeschema 0.201508290901+6132~28~ubuntu14.04.1-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -53,7 +53,7 @@
       (tstamp 55D904C0))
     (comp (ref R1)
       (value 10k)
-      (footprint Resistors_SMD:R_2816_HandSoldering)
+      (footprint Resistors_SMD:R_1206_HandSoldering)
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 55D9070E))
