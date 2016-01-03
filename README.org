@@ -2,16 +2,10 @@
 
 #+START_IMAGES:
 * images
-
 	#+CAPTION:
-	#+NAME:relay_switch_3d_3.png
+	#+NAME:relay_switch.sch.png
 	#+attr_html: :width 800px
-	[[./images/relay_switch_3d_3.png]]
-
-	#+CAPTION:
-	#+NAME:relay_switch_3d_4.png
-	#+attr_html: :width 800px
-	[[./images/relay_switch_3d_4.png]]
+	[[./images/relay_switch.sch.png]]
 
 	#+CAPTION:
 	#+NAME:relay_switch-brd.png
@@ -29,14 +23,17 @@
 	[[./images/relay_switch_3d_2.png]]
 
 	#+CAPTION:
-	#+NAME:relay_switch.sch.png
+	#+NAME:relay_switch_3d_3.png
 	#+attr_html: :width 800px
-	[[./images/relay_switch.sch.png]]
+	[[./images/relay_switch_3d_3.png]]
 
 	#+CAPTION:
-	#+NAME:relay_switch.png
+	#+NAME:relay_switch_3d_4.png
 	#+attr_html: :width 800px
-	[[./images/relay_switch.png]]
+	[[./images/relay_switch_3d_4.png]]
+
+
+
 
 
 #+END_IMAGES:
