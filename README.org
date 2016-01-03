@@ -64,7 +64,6 @@
 
 
 
-
 #+END_IMAGES:
 
 * Footnotes
