@@ -1,5 +1,32 @@
 
 
+* about
+  - relay input board for audio.
+
+  Based on a similar project [fn:1]
+
+
+
+* bom
+** relays
+   | HK19F   | http://www.aliexpress.com/item/High-Quality-10-x-DC-5V-Coil-125V-1A-DC-30V-2A-AC-2A-30V-DC/32263891251.html                                                                                                                           |
+   | RY12W-K | http://www.aliexpress.com/item/20-pcs-lot-TAKAMISAWA-RY12W-K-12V-DPDT-Signal-Relay-For-Audio/32474400291.html?spm=2114.031010208.3.20.ds0aQE&ws_ab_test=searchweb201556_3,searchweb201644_1_79_78_77_82_80_62_81_61,searchweb201560_6 |
+
+
+** interconnects
+   search for 2.54-5P XH-5P
+   XH-2P,XH-3P,XH-4P,XH-5P,etc
+   http://www.aliexpress.com/item/XH-red-and-white-cable-3P-single-head-plug-the-other-end-of-the-housing-tinned/32372398975.html
+
+
+** mouser shared cart
+  http://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=747d0c13f4
+
+** datasheets
+   | ULN2003 | http://www.ti.com/lit/ds/symlink/uln2003a.pdf |
+
+
+
 #+START_IMAGES:
 * images
 	#+CAPTION:
@@ -38,25 +65,6 @@
 
 #+END_IMAGES:
 
-* description
-  similar project
-  http://www.diyaudio.com/forums/analog-line-level/254244-building-complete-preamp-arduino-remote-volume-input-control.html#post3882944
+* Footnotes
 
-* hardware
-  | IM43GR | [[http://ca.mouser.com/ProductDetail/TE-Connectivity-Axicom/IM43GR/?qs=8DUeuUvkWiGcTCpHR6BP%2FQ%3D%3D][mouser]] | http://www.digikey.ca/product-detail/en/5-1462037-9/PB1064CT-ND/1209993 |
-
-  ULN2003 http://www.ti.com/lit/ds/symlink/uln2003a.pdf
-
-  | MCP23008 - i2c 8 input/output | http://ww1.microchip.com/downloads/en/DeviceDoc/21919e.pdf
-  save pins.... https://forum.pjrc.com/threads/21680-New-I2C-library-for-Teensy3?highlight=i2c+library
-
-  some relays..
-  - http://www.aliexpress.com/item/OMRON-G6K-2P-5VDC-Omron-Relay-genuine-original-line-10pcs/1902954954.html
-
-  - $14.83 for 10! http://www.aliexpress.com/item/IM41GR-Relays-TELECOM-DPDT-2A-3V-10PCS/32303930970.html IM41GR
-
-   HK19F is cheap... http://www.aliexpress.com/item/High-Quality-10-x-DC-5V-Coil-125V-1A-DC-30V-2A-AC-2A-30V-DC/32263891251.html
-** interconnects
-   search for 2.54-5P XH-5P
-   XH-2P,XH-3P,XH-4P,XH-5P,etc
-   http://www.aliexpress.com/item/XH-red-and-white-cable-3P-single-head-plug-the-other-end-of-the-housing-tinned/32372398975.html
+[fn:1] http://www.diyaudio.com/forums/analog-line-level/254244-building-complete-preamp-arduino-remote-volume-input-control.html#post3882944
